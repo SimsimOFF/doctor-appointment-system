@@ -1,0 +1,460 @@
+/* created by Simon MELIK-KAZARYAN */
+
+/* Загальні стилі для всього сайту */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+/* Стиль для контейнера контенту */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Стиль для заголовків */
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* Список доступних слотів */
+ul#slots {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul#slots li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul#slots li a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul#slots li a:hover {
+    text-decoration: underline;
+}
+
+/* Кнопки */
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Стилі для форми логіну */
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input[type="text"], form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f7f7f7;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus, form input[type="password"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+form button:focus {
+    outline: none;
+}
+
+/* Повідомлення про помилку */
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Стиль для контейнера форми */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7fa;
+}
+
+/* Стилі для адмін-панелі */
+.admin-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.admin-container h2 {
+    font-size: 2rem;
+}
+
+.admin-container table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.admin-container table, th, td {
+    border: 1px solid #ddd;
+}
+
+.admin-container th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.admin-container th {
+    background-color: #3498db;
+    color: white;
+}
+
+.admin-container td {
+    background-color: #f9f9f9;
+}
+
+/* Стилі для кнопки редагування */
+.admin-container a.edit-btn {
+    color: #f39c12;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.admin-container a.edit-btn:hover {
+    color: #e67e22;
+}
+
+/* Стилі для кнопки повернення на головну */
+.back-to-home {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.back-btn:hover {
+    background-color: #45a049;
+}
+
+/* Стилі для кнопки на головній */
+.main-button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+.main-button:hover {
+    background-color: #2980b9;
+}
+
+.main-button:focus {
+    outline: none;
+}
+
+/* Стиль для сторінки запису на прийом до лікаря */
+.booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7fa;
+}
+
+.booking-form {
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+.booking-form label {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.booking-form input, .booking-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.booking-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.booking-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Стилі для повідомлень про помилки */
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Стиль для контейнера форми */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7fa;
+}
+
+/* Стилі для логіну */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7fa;
+}
+
+form {
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input[type="text"], form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f7f7f7;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus, form input[type="password"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+form button:focus {
+    outline: none;
+}
+
+/* Стилі для кнопки видалення */
+.delete-btn {
+    color: #e74c3c;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #e74c3c;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* Центрування заголовка для форми додавання нового запису */
+.centered {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Стилі для форми додавання нового запису */
+form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    display: block;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+.add-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Повідомлення про помилку */
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 10px;
+}
